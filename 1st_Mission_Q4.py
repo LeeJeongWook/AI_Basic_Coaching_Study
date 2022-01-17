@@ -7,7 +7,7 @@ def merge_dict(dict_first, dict_second):
     for i in dict_second.keys():    # dict_second를 key값을 통해 순회(사과 -> 감 -> 배 -> 귤), i = key
         if i in dict_first:     # dict_second의 key값이 dict_first에도 존재할 경우
             dict_first[i] = dict_first.get(i) + dict_second.get(i)  # dict_first[i]의 value = 두 value의 합
-        else:   # dict_second의 key값이 dict_first에도 존재할 경우
+        else:   # dict_second의 key값이 dict_first에 존재하지 않을 경우
             dict_first[i] = dict_second.get(i)  # dict_second의 (key, value)를 추가한다
 
     dict_first = sorted(dict_first.items())     # 과제 답안과 동일하게 만들기(사전순 정렬)위해 정렬
