@@ -5,6 +5,9 @@ class Car():
     
 class Bike(Car):
     # TODO
+    def __init__(self, fuel, wheels, size):
+        super().__init__(fuel, wheels)
+        self.size = size
 
 bike = Bike("gas", 2, "small")
 print(bike.fuel, bike.wheels, bike.size)
