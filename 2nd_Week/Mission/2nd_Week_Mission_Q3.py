@@ -6,11 +6,15 @@ class ReadCSV(object):
         self.file_path = file_path
 
     def read_file(self):
+        data_output = []
         with open(self.file_path) as file_data:
             while True:
-                data = list(file_data.readline().split())
+                data = file_data.readline().strip()
                 if not data: break
-                print(data)
+                data_list = data.split(",")
+                data_output.append(data_list)
+
+        return data_output
 
 filepath = "..\Reference\data-01-test-score.csv"
 read_csv = ReadCSV(filepath)
