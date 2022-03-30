@@ -1,7 +1,7 @@
 # 부스트코스 AI BASIC 코칭스터디 1기 [Leader]
 # AI_Basic_Coaching_Study
 
-Boost Course AI Basic Coaching Study
+부스트코스
 
 2022.01.13 ~ 2022.02.23
 <br>
